@@ -1,35 +1,81 @@
+/* Changement pour tout les div */
 div {
-    /* border: 2px solid black; */
-    padding-left: 2px;
-    padding-right: 2px;
     display: flex;
 }
 
-#conteneurP{
+/* Gestion de direction avec FlexBox */
+#partieS, #partieP, #aPropos, #contact, #loisir, #formation, #recommandation, #experience, .formationX, .experienceX, .recommandationX, .contactX{
+    flex-direction: column;
+}
+
+.organisation, #conteneurP{
     flex-direction: row;
-    width: 1190px;
+}
+
+/* Conteneur Principal */
+#conteneurP{
+    width: 100%;
+    max-width: 1190px;
     margin-left: auto;
     margin-right: auto;
 }
 
-#partieS, #partieP, #aPropos, #contact, #loisir, #formation, #recommandation, #experience{
-    flex-direction: column;
-}
-
-.organiz{
-    flex-direction: row;
-}
-
-.formationX{
-    flex-direction: column;
-}
-
+/* Partie Secondaire */
 #partieS{
     width: 33%;
-    background-color: #FFA000;
+    min-width: 235px;
+    background-color: #00BCD4;
 }
 
+/*Partie Principal */
 #partieP{
     width: 67%;
     background-color: #ECEFF1;
+}
+
+#photo{
+    margin: auto;
+}
+
+h2{
+    background-color: #212121;
+    color: #00BCD4;
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bold;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+p{
+    color: #212121;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.contactX p, #aPropos p{
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+/* Justifie le texte du "A propos" */
+#justify{
+    text-align: justify;
+}
+
+/* Gestion des icons Front Awesome */
+.icons{
+    font-size: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 5%;
+    color: #212121;
+}
+
+/* Separe les icons, sinon ils sont collés */
+.separe{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.gras{
+    font-weight: bold;
 }
