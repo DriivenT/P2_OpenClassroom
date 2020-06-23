@@ -4,11 +4,11 @@ div {
 }
 
 /* Gestion de direction avec FlexBox */
-#partieS, #partieP, #aPropos, #contact, #loisir, #formation, #recommandation, #experience, .formationX, .experienceX, .recommandationX, .contactX{
+#partieS, #partieP, #aPropos, #contact, #loisir, #formation, #recommandation, #experience, .organisation, .experienceX, .recommandationX, .contactX, .info{
     flex-direction: column;
 }
 
-.organisation, #conteneurP{
+#formation1, #formation2, #conteneurP{
     flex-direction: row;
 }
 
@@ -29,12 +29,17 @@ div {
 
 /*Partie Principal */
 #partieP{
+    color: #212121;
     width: 67%;
     background-color: #ECEFF1;
+    padding-left: 5%;
 }
 
 #photo{
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 h2{
@@ -76,6 +81,37 @@ p{
     margin-right: 5px;
 }
 
-.gras{
+.gras, #sousTitre{
     font-weight: bold;
+}
+
+.info{
+    text-align: justify;
+    margin-right: 5%;
+}
+
+h1{
+    font-size: 400%;
+    margin-bottom: -10px;
+    font-family: 'Nunito Sans', sans-serif;
+    margin-top: 10%;
+}
+
+#nom{
+    color: #00BCD4;
+}
+
+#formation{
+    margin-top: 10%;
+}
+
+.date{
+    min-width: 200px;
+}
+
+.categorieP{
+    color: black;
+    font-size: 35px;
+    border-bottom: 2px solid #00BCD4;
+    margin-right: 5%;
 }
