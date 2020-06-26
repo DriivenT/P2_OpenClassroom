@@ -1,15 +1,21 @@
 /* Changement pour tout les div */
-div {
+div, aside{
     display: flex;
 }
 
 /* Gestion de direction avec FlexBox */
-#partieS, #partieP, #aPropos, #contact, #loisir, #formation, #recommandation, #experience, .organisation, .experienceX, .recommandationX, .contactX, .info{
+aside, section, #aPropos, #contact, #loisir, article, .contactX, .info, #recommandation1, #recommandation2{
     flex-direction: column;
 }
 
-#formation1, #formation2, #conteneurP{
+#conteneurP, #formation1, #formation2, #formation3, #exp1, #exp2, #exp3, #recommandationX{
     flex-direction: row;
+}
+
+@media all and (max-width: 1024px){
+    div, aside{
+        display: block;
+    }
 }
 
 /* Conteneur Principal */
@@ -21,18 +27,25 @@ div {
 }
 
 /* Partie Secondaire */
-#partieS{
+aside{
     width: 33%;
-    min-width: 235px;
+    min-width: 300px;
     background-color: #00BCD4;
 }
 
 /*Partie Principal */
-#partieP{
+section{
     color: #212121;
     width: 67%;
-    background-color: #ECEFF1;
+    background-color: #FFFAFA;
     padding-left: 5%;
+}
+
+@media all and (max-width: 1024px){
+    #conteneurP, aside, section{
+        min-width: 100%;
+        padding-left: 0%;
+    }
 }
 
 #photo{
@@ -40,6 +53,13 @@ div {
     margin-right: auto;
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+@media all and (max-width: 1024px){
+    #photo{
+        padding-top: 10px;
+        text-align: center;
+    }
 }
 
 h2{
@@ -61,6 +81,10 @@ p{
     padding-right: 15%;
 }
 
+#aPropos{
+    min-height: 1090px;
+}
+
 /* Justifie le texte du "A propos" */
 #justify{
     text-align: justify;
@@ -71,7 +95,7 @@ p{
     font-size: 50px;
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 5%;
+    margin-bottom: 2%;
     color: #212121;
 }
 
@@ -101,12 +125,14 @@ h1{
     color: #00BCD4;
 }
 
-#formation{
+article{
     margin-top: 10%;
 }
 
 .date{
-    min-width: 200px;
+    min-width: 225px;
+    font-weight: bold;
+    color: #575757;
 }
 
 .categorieP{
@@ -114,4 +140,51 @@ h1{
     font-size: 35px;
     border-bottom: 2px solid #00BCD4;
     margin-right: 5%;
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+
+.iconsP{
+    margin-right: 3%;
+    color: #00BCD4;
+    font-size: 110%;
+}
+
+.iconsDot{
+    margin-right: 3%;
+    color: #00BCD4;
+    font-size: 70%;
+    margin-bottom: 2%;
+    margin-top: 18px;
+}
+
+.iconsDotCircle{
+    margin-right: 3%;
+    color: #00BCD4;
+    margin-top: 17px;
+}
+
+.lieu{
+    font-weight: bold;
+    color: #4B4B4B;
+    font-size: 150%;
+    margin-bottom: -5px;
+}
+
+.titre{
+    color: #4A4A4A;
+    margin-bottom: -5px;
+}
+
+.description{
+    color: #4A4A4A;
+}
+
+#recommandation1{
+    margin-right: 40%;
+}
+
+.NP, .rank, .telephone{
+    margin-bottom: -5px;
+    font-weight: bold;
 }
