@@ -5,13 +5,20 @@
         <meta charset="utf-8">
         <title>Mon CV</title>
         <meta name="description" content="CV de Bretinière Tom">
-        <link rel="stylesheet" href="../css/style_index.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" media="screen" href="../css/style_index.css">
+        <link rel="stylesheet" media="screen and (max-width: 768px)" href="../css/mobileOnly.css">
+        <link rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 1023px)" href="../css/tabletOnly.css">
         <script src="https://kit.fontawesome.com/46f1bc7e24.js" crossorigin="anonymous"></script>
     </head>
 
-    <body>
+    <body></body>
             <!-- Conteneur de toute la page -->
             <div id="conteneurP">
+                <header class="mobileOnly">
+                    <h1><span id="nom">TOM</span> BRETINIERE</h1>
+                    <p id="sousTitre">Etudiant chez OpenClassroom</p>
+                </header>
                 <!-- Partie secondaire (jaune) -->
                 <aside>
                     <!-- Zone photo -->
@@ -23,7 +30,7 @@
 
                     <!-- Zone contact -->
                     <div id="contact">
-                        <h2>Contact</h2> <!-- Titre de catégorie -->
+                        <h2><span class="iconsS"><i class="far fa-address-book"></i></span>Contact</h2> <!-- Titre de catégorie -->
                         <div class="contactX">                
                             <p><span class="gras">Adresse:</span><br/> Beaune, France</p>
                             <p><span class="gras">Téléphone:</span><br/> 06 81 06 81 06</p>
@@ -35,7 +42,7 @@
 
                     <!-- Zone a propos -->
                     <div id="aPropos">
-                        <h2>A propos de moi</h2> <!-- Titre de catégorie -->
+                        <h2><span class="iconsS"><i class="fas fa-info-circle"></i></span>A propos de moi</h2> <!-- Titre de catégorie -->
                         <p id="justify">
                             Je suis un jeune étudiant dans le développement web. Motivation et détermination sont mes maîtres mots.
                             Je suis passionné par tout ce qui touche à l'Informatique et principalement à la programmation, et je compte devenir 
@@ -45,7 +52,7 @@
 
                     <!-- Zone loisir -->
                     <div id="loisir">
-                        <h2>Loisirs</h2> <!-- Titre de catégorie -->
+                        <h2><span class="iconsS"><i class="far fa-smile-beam"></i></span>Loisirs</h2> <!-- Titre de catégorie -->
                         <!-- Conteneur des icones -->
                         <div class="icons">
                             <div class="separe">
@@ -66,20 +73,20 @@
 
                 <!-- Partie principal (blanche) -->
                 <section>
-                    <header>
+                    <header class="desktopOnly">
                         <h1><span id="nom">TOM</span> BRETINIERE</h1>
                         <p id="sousTitre">Etudiant chez OpenClassroom</p>
                     </header>
 
                     <!-- Zone formation -->
                     <article>
-                        <p class="categorieP"><span class="iconsP"><i class="fas fa-graduation-cap"></i></span>Formation</p> <!-- Titre de catégorie -->
+                        <p class="categorieP"><span class="iconsP"><i class="fas fa-award"></i></span>Formation</p> <!-- Titre de catégorie -->
                         <!-- Conteneur de la formation 1 -->
                         <div id="formation1">
-                            <div class="iconsDotCircle">
-                                <i class="far fa-dot-circle"></i>
-                            </div>
                             <div class="date">
+                                <div class="iconsDotCircle">
+                                    <i class="far fa-dot-circle"></i>
+                                </div>
                                 <p>2020 - Maintenant<br/>Chez moi</p>
                             </div>
                             <div class="info">
@@ -95,10 +102,10 @@
                         </div>
                         <!-- Conteneur de la formation 2 -->
                         <div id="formation2">
-                            <div class="iconsDot">
-                                <i class="fas fa-circle"></i>
-                            </div>
                             <div class="date">
+                                <div class="iconsDot">
+                                    <i class="fas fa-circle"></i>
+                                </div>
                                 <p>2018-2020<br/>Dijon</p>
                             </div>
                             <div class="info">
@@ -114,10 +121,10 @@
                         </div>
                         <!-- Conteneur de la formation 3 -->
                         <div id="formation3">
-                            <div class="iconsDot">
-                                <i class="fas fa-circle"></i>
-                            </div>
                             <div class="date">
+                                <div class="iconsDot">
+                                    <i class="fas fa-circle"></i>
+                                </div>
                                 <p>Année 2017<br/>Chalon-sur-Saône</p>
                             </div>
                             <div class="info">
@@ -138,10 +145,10 @@
                         <p class="categorieP"><span class="iconsP"><i class="fas fa-briefcase"></i></span> Expériences professionelles</p> <!-- Titre de catégorie -->
                         <!-- Conteneur de l'expérience professionnelle 1 -->
                         <div id="exp1">
-                            <div class="iconsDotCircle">
-                                <i class="far fa-dot-circle"></i>
-                            </div>
                             <div class="date">
+                                <div class="iconsDotCircle">
+                                    <i class="far fa-dot-circle"></i>
+                                </div>
                                 <p>Juillet 2019 - Poste actuel<br/>Beaune</p>
                             </div>
                             <div class="info">
@@ -157,10 +164,10 @@
                         </div>
                         <!-- Conteneur de l'expérience professionnelle 2 -->
                         <div id="exp2">
-                            <div class="iconsDot">
-                                <i class="fas fa-circle"></i>
-                            </div>
                             <div class="date">
+                                <div class="iconsDot">
+                                    <i class="fas fa-circle"></i>
+                                </div>
                                 <p>Mai 2019 - Juillet 2019<br/>Beaune</p>
                             </div>
                             <div class="info">
@@ -176,10 +183,10 @@
                         </div>
                         <!-- Conteneur de l'expérience professionnelle 3 -->
                         <div id="exp3">
-                            <div class="iconsDot">
-                                <i class="fas fa-circle"></i>
-                            </div>
                             <div class="date">
+                                <div class="iconsDot">
+                                    <i class="fas fa-circle"></i>
+                                </div>
                                 <p>Mars 2019 - Avril 2019<br/>Beaune</p>
                             </div>
                             <div class="info">
