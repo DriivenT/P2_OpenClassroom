@@ -20,6 +20,10 @@
 
     }
 
+    body{
+        background-color: #FFFAFA;
+    }
+
     .date{
         margin-bottom: -30px;
     }
