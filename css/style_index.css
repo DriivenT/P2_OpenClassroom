@@ -1,3 +1,7 @@
+body{
+    overflow-x: hidden;
+}
+
 /* Changement pour tout les div */
 div, aside{
     display: flex;
@@ -10,12 +14,6 @@ aside, section, #aPropos, #contact, #loisir, article, .contactX, .info, #recomma
 
 #conteneurP, #formation1, #formation2, #formation3, #exp1, #exp2, #exp3, #recommandationX{
     flex-direction: row;
-}
-
-@media all and (max-width: 1024px){
-    div, aside{
-        display: block;
-    }
 }
 
 /* Conteneur Principal */
@@ -41,25 +39,11 @@ section{
     padding-left: 5%;
 }
 
-@media all and (max-width: 1024px){
-    #conteneurP, aside, section{
-        min-width: 100%;
-        padding-left: 0%;
-    }
-}
-
 #photo{
     margin-left: auto;
     margin-right: auto;
     margin-top: 10px;
     margin-bottom: 10px;
-}
-
-@media all and (max-width: 1024px){
-    #photo{
-        padding-top: 10px;
-        text-align: center;
-    }
 }
 
 h2{
@@ -82,7 +66,7 @@ p{
 }
 
 #aPropos{
-    min-height: 1090px;
+    min-height: 1100px;
 }
 
 /* Justifie le texte du "A propos" */
@@ -105,7 +89,7 @@ p{
     margin-right: 5px;
 }
 
-.gras, #sousTitre{
+.gras, .sousTitre{
     font-weight: bold;
 }
 
@@ -119,9 +103,10 @@ h1{
     margin-bottom: -10px;
     font-family: 'Nunito Sans', sans-serif;
     margin-top: 10%;
+    background-color: #FFFAFA;
 }
 
-#nom{
+.nom{
     color: #00BCD4;
 }
 
@@ -133,6 +118,7 @@ article{
     min-width: 225px;
     font-weight: bold;
     color: #575757;
+    margin-right: 20px;
 }
 
 .categorieP{
@@ -148,6 +134,13 @@ article{
     margin-right: 3%;
     color: #00BCD4;
     font-size: 110%;
+}
+
+.iconsS{
+    margin-right: 3%;
+    color: #00BCD4;
+    font-size: 110%;
+    display: none;
 }
 
 .iconsDot{
@@ -181,10 +174,16 @@ article{
 }
 
 #recommandation1{
-    margin-right: 40%;
+    margin-right: 30%;
 }
 
 .NP, .rank, .telephone{
     margin-bottom: -5px;
     font-weight: bold;
+}
+
+@media all and (min-width: 767px){
+    .mobileOnly{
+        display: none;
+    }
 }

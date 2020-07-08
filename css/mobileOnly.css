@@ -1,0 +1,79 @@
+@media all and (max-width: 767px){
+
+    #conteneurP{
+        flex-direction: column;
+    }
+
+    aside, section, #aPropos, #contact, #loisir, article, .contactX, .info, #recommandation1, #recommandation2, #formation1, #formation2, #formation3, #exp1, #exp2, #exp3, #recommandationX{
+        flex-direction: column;
+    }
+    
+    /* #formation1, #formation2, #formation3, #exp1, #exp2, #exp3, #recommandationX{
+        flex-direction: row;
+    } */
+
+    #conteneurP, aside, section{
+        width: 100%;
+        padding-left: 10px;
+        min-width: 0%;
+        margin-left: 0%;
+
+    }
+
+    .date{
+        margin-bottom: -30px;
+    }
+
+    #formation1, #formation2, #formation3, #exp1, #exp2, #exp3{
+        margin-bottom: 20px;
+    }
+
+    .info{
+        margin-left: 28px;
+    }
+
+    aside{
+        background-color: #FFFAFA;
+    }
+
+    h2, .categorieP{
+        background-color: #FFFAFA;
+        color: black;
+        font-size: 35px;
+        border-bottom: 2px solid #00BCD4;
+        margin-right: 5%;
+        font-weight: bold;
+        padding-bottom: 15px;
+        text-align: center;
+    }
+
+    .iconsS{
+        display: initial;
+    }
+
+    #photo{
+        display: none;
+    }
+
+    #recommandation1, #recommandation2{
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    #recommandation1{
+        margin-top: -15px;
+    }
+
+    #aPropos{
+        min-height: 500px;
+    }
+
+    .desktopOnly{
+        display: none;
+    }
+
+    #loisir{
+        margin-bottom: 50px;
+    }
+}

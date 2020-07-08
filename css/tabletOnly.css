@@ -1,0 +1,29 @@
+@media all and (min-width: 768px) and (max-width: 1023px){
+    #conteneurP{
+        flex-direction: row;
+    }
+
+    aside, section, #aPropos, #contact, #loisir, article, .contactX, .info, #recommandation1, #recommandation2, #formation1, #formation2, #formation3, #exp1, #exp2, #exp3{
+        flex-direction: column;
+    }
+
+    #recommandation1{
+        margin-right: 20%;
+    }
+
+    #aPropos{
+        min-height: 1200px;
+    }
+
+    .date{
+        margin-bottom: -30px;
+    }
+
+    #formation1, #formation2, #formation3, #exp1, #exp2, #exp3{
+        margin-bottom: 20px;
+    }
+
+    .info{
+        margin-left: 28px;
+    }
+}
