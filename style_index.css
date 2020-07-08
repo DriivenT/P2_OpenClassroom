@@ -1,0 +1,189 @@
+body{
+    overflow-x: hidden;
+}
+
+/* Changement pour tout les div */
+div, aside{
+    display: flex;
+}
+
+/* Gestion de direction avec FlexBox */
+aside, section, #aPropos, #contact, #loisir, article, .contactX, .info, #recommandation1, #recommandation2{
+    flex-direction: column;
+}
+
+#conteneurP, #formation1, #formation2, #formation3, #exp1, #exp2, #exp3, #recommandationX{
+    flex-direction: row;
+}
+
+/* Conteneur Principal */
+#conteneurP{
+    width: 100%;
+    max-width: 1190px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Partie Secondaire */
+aside{
+    width: 33%;
+    min-width: 300px;
+    background-color: #00BCD4;
+}
+
+/*Partie Principal */
+section{
+    color: #212121;
+    width: 67%;
+    background-color: #FFFAFA;
+    padding-left: 5%;
+}
+
+#photo{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+h2{
+    background-color: #212121;
+    color: #00BCD4;
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bold;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+p{
+    color: #212121;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.contactX p, #aPropos p{
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+#aPropos{
+    min-height: 1100px;
+}
+
+/* Justifie le texte du "A propos" */
+#justify{
+    text-align: justify;
+}
+
+/* Gestion des icons Front Awesome */
+.icons{
+    font-size: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2%;
+    color: #212121;
+}
+
+/* Separe les icons, sinon ils sont collés */
+.separe{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.gras, .sousTitre{
+    font-weight: bold;
+}
+
+.info{
+    text-align: justify;
+    margin-right: 5%;
+}
+
+h1{
+    font-size: 400%;
+    margin-bottom: -10px;
+    font-family: 'Nunito Sans', sans-serif;
+    margin-top: 10%;
+    background-color: #FFFAFA;
+}
+
+.nom{
+    color: #00BCD4;
+}
+
+article{
+    margin-top: 10%;
+}
+
+.date{
+    min-width: 225px;
+    font-weight: bold;
+    color: #575757;
+    margin-right: 20px;
+}
+
+.categorieP{
+    color: black;
+    font-size: 35px;
+    border-bottom: 2px solid #00BCD4;
+    margin-right: 5%;
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+
+.iconsP{
+    margin-right: 3%;
+    color: #00BCD4;
+    font-size: 110%;
+}
+
+.iconsS{
+    margin-right: 3%;
+    color: #00BCD4;
+    font-size: 110%;
+    display: none;
+}
+
+.iconsDot{
+    margin-right: 3%;
+    color: #00BCD4;
+    font-size: 70%;
+    margin-bottom: 2%;
+    margin-top: 18px;
+}
+
+.iconsDotCircle{
+    margin-right: 3%;
+    color: #00BCD4;
+    margin-top: 17px;
+}
+
+.lieu{
+    font-weight: bold;
+    color: #4B4B4B;
+    font-size: 150%;
+    margin-bottom: -5px;
+}
+
+.titre{
+    color: #4A4A4A;
+    margin-bottom: -5px;
+}
+
+.description{
+    color: #4A4A4A;
+}
+
+#recommandation1{
+    margin-right: 30%;
+}
+
+.NP, .rank, .telephone{
+    margin-bottom: -5px;
+    font-weight: bold;
+}
+
+@media all and (min-width: 767px){
+    .mobileOnly{
+        display: none;
+    }
+}
