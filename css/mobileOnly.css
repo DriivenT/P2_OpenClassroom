@@ -70,14 +70,10 @@
     }
 
     #aPropos{
-        min-height: 500px;
+        min-height: 200px;
     }
 
     .desktopOnly{
         display: none;
-    }
-
-    #loisir{
-        margin-bottom: 50px;
     }
 }
