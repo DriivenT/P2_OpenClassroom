@@ -3,4 +3,4 @@ Projet 2 de ma formation OC
 
 ## Objectif
 Réaliser un CV au format web grâce à HTML et CSS.  
-/!\ Le CV n'est pas à jour !! /!\
+/!\ Ce CV étant un projet de ma formation, je n'ai pas tenue à renseigner l'intégralité de mes informations personnelles. Il est donc incomplet et pas à jour ! /!\
